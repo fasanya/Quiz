@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --hue-cool: 200;
+    --hue-hot: 0;
+    --hue-warm: 145;
+    --hue-cold: 690;
+}
+
+body{
+    /* --hue: var(--hue-neutral);  */
+    --hue: var(--hue-cool);
+    padding: 0;
+    margin:0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(var(--hue), 100%, 20%);
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    box-sizing: border-box;
+    width: 800px;
+    max-width: 80%;
+}
+.form-control{
+    display: block;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgba(33, 150, 204, 0.466);
+    border-radius: 3px;
+    outline: none;
+    margin: 10px;
+}
+.container{
+    width: 400px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+   margin-top: 5px;
+   padding: 5px;
+   background: rgb(36, 143, 59);
+   border: none;
+   outline: none;
+   color: white;
+   border-radius: 3px;
+   font-size: 1.0rem;
+}
+.btn:hover{
+   border: 1px solid rgba(35, 236, 35, 0.1);
+}
+.errorMsg{
+   color: red;
+   padding: 5px;
+}
+.error{
+    color: rgb(27, 138, 172);
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.successMsg{
+    color: green;
+    padding: 5px;
+}
+input{
+    width: 100%;
+    padding: 8px;
+  
+}
+.hide{
+    display: none;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
